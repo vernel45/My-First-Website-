@@ -79,6 +79,9 @@ li {
 ABOUT
 
 */
+#about {
+    background-color: rgba(246, 246, 62, 0.284);    
+}
 
 main section {
   padding: 48px 24px;
@@ -98,6 +101,7 @@ main section {
    align-items: center;
    max-width: 1200px;
    margin: 0 auto;
+   
 }
 
 .about__img--wrapper {
@@ -115,6 +119,7 @@ img {
 .about__img--wrapper,
 .section__description--wrapper {
     padding: 0 24;
+    
 }
 
 .section__description--para {
@@ -142,3 +147,58 @@ DISCORD
 #discord {
 background-color: #cefeff;
 }
+
+/*
+
+CONTACT
+
+*/
+
+#contact {
+    background-color: #dce9ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form {
+    width: 100%
+    max-width: 600px;
+    display: flex;
+    flex-direction:column;    
+    margin: 0 auto;
+}
+
+input, textarea {
+ margin-bottom: 24px;
+ font-size: 20px;
+ padding: 6px 12px;
+
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+    backgroud-color: #aaf5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    }
+
+    .footer__logo {
+        max-width: 480px;
+
+    }
+
+    .footer__links{
+        margin-bottom: 32px;
+    }
+
+    .footer__links {
+        padding: 0 16px;
+        
+    }
