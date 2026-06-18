@@ -61,6 +61,10 @@ li {
     list-style-type: none;
     padding-left: 16px;
 }
+li {
+    list-style-type: none;
+    padding-left: 16px;
+}
 
 .row{
     width:100%;
@@ -76,12 +80,13 @@ ABOUT
 
 */
 
-#about ,
-#discord,
-#contact
+main section {
+  padding: 48px 24px;
 }
 
-h2 {
+#about h2,
+#discord h2,
+#contact h2 {
     font-size: 60px;
     text-align: center;
     margin-bottom: 24px;
@@ -91,6 +96,8 @@ h2 {
    display: flex;
    justify-content: center;
    align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
 }
 
 .about__img--wrapper {
@@ -114,7 +121,17 @@ img {
     font-size: 20px;
    line height: 1.5;
    margin-bottom: 24px;
+}
 
+@media (max width: 768px) {
+    .section__description {
+        flex-direction: column;
+        }
+
+    .section__description--wrapper,
+    .about__img--wrapper {
+        width:100%;
+    } 
 }
 /*
 
@@ -124,3 +141,4 @@ DISCORD
 
 #discord {
 background-color: #cefeff;
+}
