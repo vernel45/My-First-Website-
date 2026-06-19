@@ -12,6 +12,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
+  background-color:#aaf5ff;
 }
 
 header {
@@ -30,7 +31,7 @@ h1 {
 .subheader {
   font-size: 36px;
   margin: 16px 0 24px 0;
-}
+ }
 
 button {
   background-color: #05c7cf;
@@ -162,6 +163,7 @@ form {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
 input,
@@ -196,3 +198,49 @@ footer {
   gap: 16px;
   padding: 0 16px;
 }
+@media (max-width: 720px) 
+    .row {
+        flex-direction: column;
+    }
+
+    .home__description {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+    }
+
+    .home__description--button {
+        max-width: 240px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 60px;
+     }
+
+     .subheader {
+        text-align: center;
+        font-size: 28px;
+       }
+
+       ul {
+        display:none;
+       }
+
+       .section__description {
+        flex-direction: column;
+        }
+
+        .section__description--wrapper {
+          width: 100%;  
+        }
+
+        .about__img--wrapper {
+            width: 100%;
+            }
+
+
+            #discord .section__description{
+                flex-direction: column-reverse;
+            }
